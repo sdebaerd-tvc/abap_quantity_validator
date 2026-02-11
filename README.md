@@ -352,7 +352,7 @@ Uses ABAP's `DESCRIBE FIELD` to identify input type and apply appropriate valida
 
 ### Number Conversion
 - Removes thousand separators and spaces
-- Converts to packed number (P type) with 16 digits and 3 decimals
+- Converts to packed number (P type) with 15 digits and 3 decimals
 - Handles all standard ABAP numeric formats
 
 ### Decimal Counting
@@ -363,7 +363,7 @@ Uses ABAP's `DESCRIBE FIELD` to identify input type and apply appropriate valida
 
 ## Limitations
 
-- Maximum precision: 16 digits + 3 decimal places
+- Maximum precision: 15 digits (3 decimal places)
 - Does not validate against specific unit of measure rules
 - Does not perform currency-specific validations
 - String conversion may lose precision for very large numbers
